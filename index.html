@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+   <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#liquidos">Líquidos</a></li>
+        <li><a href="#polvos">Polvos</a></li>
+        <li><a href="#cosmeticos">Cosméticos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Buscador -->
+    <div>
+      <input type="text" id="busqueda" placeholder="Buscar producto...">
+      <button onclick="buscar()">Buscar</button>
+    </div>
+  </header>
+
+  <!-- ================== SECCIÓN LÍQUIDOS ================== -->
+  <section id="liquidos">
+    <h1>LÍQUIDOS</h1>
+
+    <!-- Producto X3 -->
+    <div class="container">
+      <h2>X3</h2>
+      <p><strong>Efecto fisiológico:</strong> Antioxidante y protector celular.</p>
+      <p><strong>Acción fisiológica:</strong> Contribuye a reducir el daño oxidativo en las células.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Vitamina C</li>
+        <li>Vitamina E</li>
+        <li>Polifenoles</li>
+      </ul>
+      <p><strong>Posología:</strong> 10 ml al día.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD12345-2019</p>
+      <div class="image-container">
+        <img src="X3.png.png" alt="X3">
+      </div>
+    </div>
+
+    <!-- Producto Bioarthry -->
+    <div class="container">
+      <h2>BIOARTHRY</h2>
+      <p><strong>Efecto fisiológico:</strong> Salud articular y ósea.</p>
+      <p><strong>Acción fisiológica:</strong> Ayuda a mantener la movilidad articular.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Glucosamina</li>
+        <li>Condroitina</li>
+        <li>Colágeno hidrolizado</li>
+      </ul>
+      <p><strong>Posología:</strong> 20 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD67890-2020</p>
+      <div class="image-container">
+        <img src="BIOARTHRY.png.png" alt="Bioarthry">
+      </div>
+    </div>
+
+    <!-- Producto DLR30 -->
+    <div class="container">
+      <h2>DLR30</h2>
+      <p><strong>Efecto fisiológico:</strong> Refuerza defensas y vitalidad.</p>
+      <p><strong>Acción fisiológica:</strong> Estimula el sistema inmune.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Vitamina D</li>
+        <li>Vitamina C</li>
+        <li>Zinc</li>
+      </ul>
+      <p><strong>Posología:</strong> 15 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD54321-2021</p>
+      <div class="image-container">
+        <img src="DLR30.png.png" alt="DLR30">
+      </div>
+    </div>
+
+    <!-- Producto Sinaldox -->
+    <div class="container">
+      <h2>SINALDOX</h2>
+      <p><strong>Efecto fisiológico:</strong> Ayuda a la salud hepática.</p>
+      <p><strong>Acción fisiológica:</strong> Facilita procesos de detoxificación.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Silimarina</li>
+        <li>Vitamina B6</li>
+        <li>Ácido alfa lipoico</li>
+      </ul>
+      <p><strong>Posología:</strong> 10 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD11223-2020</p>
+      <div class="image-container">
+        <img src="SINALDOX.png.png" alt="Sinaldox">
+      </div>
+    </div>
+
+    <!-- Producto Prosan -->
+    <div class="container">
+      <h2>PROSAN</h2>
+      <p><strong>Efecto fisiológico:</strong> Apoya la salud prostática.</p>
+      <p><strong>Acción fisiológica:</strong> Contribuye a la función urinaria.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Saw Palmetto</li>
+        <li>Zinc</li>
+        <li>Lycopene</li>
+      </ul>
+      <p><strong>Posología:</strong> 15 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD99887-2021</p>
+      <div class="image-container">
+        <img src="PROSAN.png.png" alt="Prosan">
+      </div>
+    </div>
+
+    <!-- Producto Braxim -->
+    <div class="container">
+      <h2>Braxim</h2>
+      <p><strong>Efecto fisiológico:</strong> Mejora circulación cerebral.</p>
+      <p><strong>Acción fisiológica:</strong> Favorece memoria y concentración.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Ginkgo biloba</li>
+        <li>Magnesio</li>
+        <li>Vitamina B12</li>
+      </ul>
+      <p><strong>Posología:</strong> 10 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD33445-2021</p>
+      <div class="image-container">
+        <img src="BRAXIM.png.png" alt="Braxim">
+      </div>
+    </div>
+
+    <!-- Producto Cal 3.0 -->
+    <div class="container">
+      <h2>Cal 3.0</h2>
+      <p><strong>Efecto fisiológico:</strong> Fortalece huesos y dientes.</p>
+      <p><strong>Acción fisiológica:</strong> Apoya la absorción de calcio.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Calcio</li>
+        <li>Vitamina D</li>
+        <li>Magnesio</li>
+      </ul>
+      <p><strong>Posología:</strong> 20 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD55667-2022</p>
+      <div class="image-container">
+        <img src="CAL 3.0.png.png" alt="Cal 3.0">
+      </div>
+    </div>
+
+    <!-- Producto VitalLife -->
+    <div class="container">
+      <h2>VitalLife</h2>
+      <p><strong>Efecto fisiológico:</strong> Aporta energía y vitalidad.</p>
+      <p><strong>Acción fisiológica:</strong> Combina vitaminas y extractos naturales.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Complejo B</li>
+        <li>Guaraná</li>
+        <li>Ginseng</li>
+      </ul>
+      <p><strong>Posología:</strong> 15 ml diarios.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD77889-2021</p>
+      <div class="image-container">
+        <img src="VITAL LIFE.png.png" alt="VitalLife">
+      </div>
+    </div>
+
+  </section>
+
+    <!-- ================== SECCIÓN POLVOS ================== -->
+  <section id="polvos">
+    <h1>POLVOS</h1>
+
+    <!-- Producto Colágeno Flex -->
+    <div class="container">
+      <h2>Colágeno Flex</h2>
+      <p><strong>Efecto fisiológico:</strong> Favorece la salud articular y la elasticidad de la piel.</p>
+      <p><strong>Acción fisiológica:</strong> Aporta colágeno hidrolizado de fácil absorción.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Colágeno hidrolizado</li>
+        <li>Vitamina C</li>
+        <li>Magnesio</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 sobre diario diluido en agua.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD11234-2020</p>
+      <div class="image-container">
+        <img src="COLGEN COMPLEX.png.png" alt="Colágeno Flex">
+      </div>
+    </div>
+
+    <!-- Producto NutriPro -->
+    <div class="container">
+      <h2>NutriPro</h2>
+      <p><strong>Efecto fisiológico:</strong> Complemento nutricional para energía y recuperación.</p>
+      <p><strong>Acción fisiológica:</strong> Contiene proteínas, vitaminas y minerales.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Proteína de suero</li>
+        <li>Vitamina B12</li>
+        <li>Hierro</li>
+      </ul>
+      <p><strong>Posología:</strong> 2 cucharadas en 250 ml de agua o leche.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD22345-2021</p>
+      <div class="image-container">
+        <img src="PROSAN.png.png" alt="NutriPro">
+      </div>
+    </div>
+
+    <!-- Producto EnerMax -->
+    <div class="container">
+      <h2>EnerMax</h2>
+      <p><strong>Efecto fisiológico:</strong> Incrementa la energía y reduce el cansancio.</p>
+      <p><strong>Acción fisiológica:</strong> Contiene aminoácidos esenciales y vitaminas.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Aminoácidos de cadena ramificada (BCAA)</li>
+        <li>Vitamina B6</li>
+        <li>Vitamina B1</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 medida antes del ejercicio.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD33456-2021</p>
+      <div class="image-container">
+        <img src="EGALIU.png.png" alt="EnerMax">
+      </div>
+    </div>
+
+    <!-- Producto FibraPlus -->
+    <div class="container">
+      <h2>FibraPlus</h2>
+      <p><strong>Efecto fisiológico:</strong> Mejora la digestión y regula el tránsito intestinal.</p>
+      <p><strong>Acción fisiológica:</strong> Aporta fibras solubles e insolubles.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Fibra de avena</li>
+        <li>Fibra de manzana</li>
+        <li>Inulina</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 cucharada en 200 ml de agua.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD44567-2020</p>
+      <div class="image-container">
+        <img src="FIBRA NATURAL.png.png" alt="FibraPlus">
+      </div>
+    </div>
+
+    <!-- Producto VitaSport -->
+    <div class="container">
+      <h2>VitaSport</h2>
+      <p><strong>Efecto fisiológico:</strong> Reposición de electrolitos y energía.</p>
+      <p><strong>Acción fisiológica:</strong> Ayuda en la hidratación y el rendimiento físico.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>Sodio</li>
+        <li>Potasio</li>
+        <li>Glucosa</li>
+      </ul>
+      <p><strong>Posología:</strong> 1 sobre en 500 ml de agua.</p>
+      <p><strong>Registro Sanitario:</strong> RSAD55678-2022</p>
+      <div class="image-container">
+        <img src="VITAL LIFE.png.png" alt="VitaSport">
+      </div>
+    </div>
+
+  </section>
+
+   
+
+  <!-- ================== SCRIPT ================== -->
+  <script>
+    // Barra de navegación con desplazamiento suave
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+
+    // Función de búsqueda
+    function buscar() {
+      const texto = document.getElementById("busqueda").value.toLowerCase().trim();
+      if (!texto) return;
+
+      // Limpiar resaltados anteriores
+      const marcas = document.querySelectorAll(".resaltado");
+      marcas.forEach(m => {
+        const parent = m.parentNode;
+        parent.replaceChild(document.createTextNode(m.textContent), m);
+        parent.normalize();
+      });
+
+      let encontrado = false;
+      const elementos = document.querySelectorAll("section, p, h1, h2, h3, h4, h5, h6, li");
+
+      elementos.forEach(el => {
+        const contenido = el.textContent.toLowerCase();
+        const index = contenido.indexOf(texto);
+        if (index !== -1 && !encontrado) {
+          // Resaltar y hacer scroll
+          const original = el.innerHTML;
+          const regex = new RegExp(`(${texto})`, "gi");
+          el.innerHTML = original.replace(regex, '<span class="resaltado">$1</span>');
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          encontrado = true;
+        }
+      });
+
+      if (!encontrado) {
+        alert("No se encontró esa palabra en la página.");
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!-- ================== CATALOGO COSMÉTICOS ================== -->
+<section id="cosmeticos">
+  <h1>CATÁLOGO COSMÉTICOS</h1>
+  
+
+  <!-- GlowMelt -->
+  <div class="container">
+    <h2>GLOWMELT ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="GLOWMELT.png.png" alt="GlowMelt">
+    </div>
+    <p>
+      <strong>GlowMelt</strong> Formulado para mejorar la salud y apariencia de la piel desde el interior, combinando potentes ingredientes activos que favorecen la hidratación, elasticidad y luminosidad.
+    </p>
+  </div>
+
+  <!-- Makeup Collagen -->
+  <div class="container">
+    <h2>MAKEUP COLLAGEN ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="COLAGENO MARINO.png.png" alt="Makeup Collagen">
+    </div>
+    <p>
+      <strong>Makeup Collagen</strong> Apoya la regeneración y firmeza de la piel, ayuda a reducir líneas de expresión y fortalece uñas y cabello.
+    </p>
+  </div>
+
+  <!-- AquaGlow -->
+  <div class="container">
+    <h2>AQUAGLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="AQUA GLOW.png.png" alt="AquaGlow">
+    </div>
+    <p>
+      <strong>AquaGlow</strong> limpia profundamente tu piel sin resecarla, gracias a su contenido de extractos naturales.
+    </p>
+  </div>
+
+  <!-- VelvetFlow -->
+  <div class="container">
+    <h2>VELVETFLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="VELVETFLOW.png.png" alt="VelvetFlow">
+    </div>
+    <p>
+      <strong>VelvetFlow</strong> es una innovadora fórmula que combina lo mejor de la biodiversidad colombiana con un avanzado complejo de aminoácidos.
+    </p>
+  </div>
+
+  <!-- GlowGlowth -->
+  <div class="container">
+    <h2>GLOWGLOWTH ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="GLOGLOWTH.png.png" alt="GlowGlowth">
+    </div>
+    <p>
+      <strong>GlowGlowth</strong> fortalece la fibra capilar e incrementa el crecimiento del cabello.
+    </p>
+  </div>
+
+  <!-- HerbaTherm -->
+  <div class="container">
+    <h2>HERBATHERM ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="HERBATHERM.png.png" alt="HerbaTherm">
+    </div>
+    <p>
+      <strong>HerbaTherm</strong> protege el cabello del daño causado por calor de planchas, rizadores o secadores.
+    </p>
+  </div>
+
+  <!-- VitaGlow -->
+  <div class="container">
+    <h2>VITAGLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="VITAGLOW.png.png" alt="VitaGlow">
+    </div>
+    <p>
+      <strong>VitaGlow</strong> revitaliza profundamente el cabello desde la raíz hasta las puntas.
+    </p>
+  </div>
+
+  <!-- VividGlow -->
+  <div class="container">
+    <h2>VIVIDGLOW ¿PARA QUÉ SIRVE?</h2>
+    <div class="image-container">
+      <img src="VIVIDGLOW.png.png" alt="VividGlow">
+    </div>
+    <p>
+      <strong>VividGlow</strong> nutre profundamente el cabello desde la raíz hasta las puntas.
+    </p>
+  </div>
+</section>
+
+
+<!-- ================== SECCIÓN CONTACTO ================== -->
+<section id="contacto">
+    <div class="contenido-seccion">
+        <h2 class="titulo-seccion">CONTACTO</h2>
+        <p>Santiago</p>
+        <p>Teléfono: +57 312 345 6789</p>
+        <p>Correo electrónico: contacto@santiagoejemplo.com</p>
+        <p>Dirección: Bogotá, Colombia</p>
+    </div>
+</section>
