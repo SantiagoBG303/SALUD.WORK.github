@@ -25,9 +25,39 @@
     </div>
   </header>
 
-  <!-- ================== SECCIÓN LÍQUIDOS ================== -->
-  <section id="liquidos">
-    <h1>LÍQUIDOS</h1>
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <span class="hero-pill">Premium Medical Suite</span>
+        <h1>Salud.Work</h1>
+        <p>Un catálogo premium de productos de salud y belleza con diseño de app médica de alto nivel, pensado para transmitir confianza, innovación y serenidad.</p>
+        <div class="hero-actions">
+          <a href="#liquidos" class="hero-button">Explorar productos</a>
+          <a href="#cosmeticos" class="hero-link">Ver cosméticos</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>98%</strong>
+            <span>Confianza médica</span>
+          </div>
+          <div class="stat-card">
+            <strong>24/7</strong>
+            <span>Soporte premium</span>
+          </div>
+          <div class="stat-card">
+            <strong>+120</strong>
+            <span>Fórmulas validadas</span>
+          </div>
+        </div>
+        <div class="hero-loader" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================== SECCIÓN LÍQUIDOS ================== -->
+    <section id="liquidos">
+      <h1>LÍQUIDOS</h1>
 
     <!-- Producto X3 -->
     <div class="container">
@@ -319,12 +349,22 @@
         alert("No se encontró esa palabra en la página.");
       }
     }
-  </script>
-</body>
-</html>
 
-<!-- ================== CATALOGO COSMÉTICOS ================== -->
-<section id="cosmeticos">
+    const btnTop = document.getElementById("btnTop");
+    window.addEventListener("scroll", () => {
+      btnTop.style.display = window.scrollY > 350 ? "block" : "none";
+    });
+
+    if (btnTop) {
+      btnTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  </script>
+  <button id="btnTop" aria-label="Ir arriba">↑</button>
+
+  <!-- ================== CATALOGO COSMÉTICOS ================== -->
+  <section id="cosmeticos">
   <h1>CATÁLOGO COSMÉTICOS</h1>
   
 
@@ -419,12 +459,26 @@
 
 
 <!-- ================== SECCIÓN CONTACTO ================== -->
-<section id="contacto">
-    <div class="contenido-seccion">
-        <h2 class="titulo-seccion">CONTACTO</h2>
-        <p>Santiago</p>
-        <p>Teléfono: +57 312 345 6789</p>
-        <p>Correo electrónico: contacto@santiagoejemplo.com</p>
-        <p>Dirección: Bogotá, Colombia</p>
-    </div>
-</section>
+    <section id="contacto">
+      <h1>CONTACTO</h1>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2>Atención rápida</h2>
+          <p>Escríbenos para asesoría personalizada y recomendaciones precisas.</p>
+          <p><strong>Email:</strong> contacto@salud.work</p>
+        </div>
+        <div class="contact-card">
+          <h2>Soporte 24/7</h2>
+          <p>Estamos listos para ayudarte con tus necesidades de salud y belleza.</p>
+          <p><strong>Teléfono:</strong> +57 312 345 6789</p>
+        </div>
+      </div>
+      <p class="contacto-footer">Bienvenido al catálogo más innovador en salud y belleza.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Salud.Work | Innovación, bienestar y diseño cuidado.</p>
+  </footer>
+</body>
+</html>
